@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Root = () => {
     return (
@@ -14,7 +15,7 @@ const Root = () => {
                 </h1>
 
                 <p className="description">
-                    Get started by editing <code>pages/index.js</code>
+                    Read <Link href="/posts/first-post"><a className="t-first-post-link">this page!</a></Link>
                 </p>
 
                 <div className="grid">
@@ -98,18 +99,13 @@ const Root = () => {
         }
 
         a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
           color: #0070f3;
           text-decoration: none;
         }
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
+        a:hover,
+        a:focus,
+        a:active {
           text-decoration: underline;
         }
 
