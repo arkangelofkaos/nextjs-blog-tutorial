@@ -1,12 +1,7 @@
-import {useState} from "react"
+import FirstPostCounter from "../../src/FirstPostCounter";
 
 const FirstPost = () => {
-    const [count, setCount] = useState(1)
-    return <>
-        <h1>First Post</h1>
-        <div>Count: {count}</div>
-        <button onClick={() => setCount(count+1)}>+1</button>
-    </>
+    return <FirstPostCounter/>
 }
 
 export default FirstPost
